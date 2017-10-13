@@ -21,8 +21,14 @@ class UrlsController < ApplicationController
     if @url.nil?
       render 'forward'
     else
-      redirect_to @url.original_url 
+      @count = @url.counter + 1
+      @url.update_attribute(:counter, @count)
+      redirect_to @url.original_url
     end
+  end
+  
+  def index
+    @urls = Url.paginate(page: params[:page])
   end
   
 private
