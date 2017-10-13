@@ -1,0 +1,9 @@
+production:
+    start_url: https://vast-anchorage-18753.herokuapp.com/
+
+development:
+    start_url: https://rails-tutorial-domska.c9users.io/
+
+test:
+    start_url: https://rails-tutorial-domska.c9users.io/
+

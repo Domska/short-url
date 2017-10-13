@@ -1,7 +1,3 @@
-<% if Rails.env.production? %>
-<%= 'https://vast-anchorage-18753.herokuapp.com/' + @url.short_url %>
-<% else %>
 <%= APP_CONFIG['start_url'] + @url.short_url %></br>
-<% end %>
 
 <%= link_to "New url", new_path %>
