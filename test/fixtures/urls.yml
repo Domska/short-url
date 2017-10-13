@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+first:
+  short_url: abcdef
+  original_url: http://abcde.de
+
+second:
+  short_url: abcde
+  original_url: http://alsl.com
