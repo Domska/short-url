@@ -1,26 +1,33 @@
 <% provide(:title, 'All links') %>
 <h1>All Links</h1>
 
-<%= will_paginate %>
+<div class="center">
+  <%= will_paginate %>
+</div>
 
-<table>
-  <tr>
-    <th>ID</th>
-    <th>Short URL</th>
-    <th>Original URL</th>
-    <th>Visits</th>
-  </tr>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Short URL</th>
+      <th>Original URL</th>
+      <th>Visits</th>
+    </tr>
+  </thead>
   
-  <% @urls.each do |url| %>
-  <tr>
-    <td><%= url.id %></td>
-    <td><%= url.short_url %></td>
-    <td><%= url.original_url %></td>
-    <td><%= url.counter %></td>
-  </tr>
-  <% end %>
-  
+  <tbody>
+    <% @urls.each do |url| %>
+    <tr>
+      <td><%= url.id %></td>
+      <td><%= url.short_url %></td>
+      <td><%= url.original_url %></td>
+      <td><%= url.counter %></td>
+    </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<%= will_paginate %>
+<div class="center">
+  <%= will_paginate %>
+</div>
 

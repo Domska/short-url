@@ -10,6 +10,7 @@ class UrlsController < ApplicationController
   def create
     @url = Url.new(url_params)
       if @url.save
+        flash[:success] = "Short URL created successfully"
         redirect_to @url
       else
         render 'new'

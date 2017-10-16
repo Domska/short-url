@@ -17,7 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'minitest-reporters'
 gem 'rails-controller-testing'
 gem 'will_paginate'
-gem 'bootstrap'
+gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
 
 group :development, :test do
