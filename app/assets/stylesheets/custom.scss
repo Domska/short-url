@@ -28,3 +28,20 @@ body {
     color: $state-danger-text;
   }
 }
+
+#logo {
+  float:left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.url {
+  text-align: center;
+  font-size: 1.5em;
+}

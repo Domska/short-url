@@ -20,6 +20,7 @@ class UrlsController < ApplicationController
   def forward
     @url = Url.find_by(short_url: params[:short_url])
     if @url.nil?
+      @disable_nav = true
       render 'forward'
     else
       @count = @url.counter + 1
