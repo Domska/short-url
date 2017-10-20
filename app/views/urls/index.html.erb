@@ -19,7 +19,7 @@
     <% @urls.each do |url| %>
     <tr>
       <td><%= url.id %></td>
-      <td><%= url.short_url %></td>
+      <td><%= APP_CONFIG['start_url'] + url.short_url %></td>
       <td><%= url.original_url %></td>
       <td><%= url.counter %></td>
     </tr>
