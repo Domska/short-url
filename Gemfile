@@ -7,11 +7,11 @@ end
 
 
 gem 'rails', '~> 7.2.1'
-gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
+gem 'puma', '~> 6.4.2'
+gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '>= 1.3.0'
 
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'minitest-reporters'
@@ -21,9 +21,9 @@ gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.5.0'
+  gem 'sqlite3', '~> 2.0.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13'
+  gem 'capybara', '~> 3.40'
   gem 'selenium-webdriver'
 end
 
